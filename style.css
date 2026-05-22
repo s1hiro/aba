@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(16, 13, 18);
+    font-family: "Varela Round";
+    margin: 0;
+    padding: 0;
+    color: rgb(250, 249, 246);
+    font-size: clamp(14px, 1vw + 10px, 19px);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+p {
+    margin: 0px;
+}
+
+.mainText {
+    font-size: 5rem;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(31, 44, 161);
+    width: 100vw;
+    flex-basis: 13vh;
+    flex-shrink: 0;
+    transition: all .5s ease-out;
+    overflow: hidden;
+    align-items: flex-start;
+}
+
+header.is-hidden {
+    flex-basis: 2vh;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    width: 100%;
+    align-items: flex-start;
+}
+
+#gameContainer {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    background-color: rgba(6, 11, 89, 0.712);
+    border-radius: 20px;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    font-size: 2rem;
+    width: 25%;
+    height: fit-content;
+    background-color: rgb(40, 69, 234);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.cardTitle {
+    align-self: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+img {
+    margin: 5px;
+    height: 100%;
+}
