@@ -81,7 +81,8 @@ let mouseReleasedThisFrame = false;
 let wasPressedLastFrame = false;
 
 function setup() {
-  createCanvas(780, 640);
+  let canvas = createCanvas(780, 640);
+  canvas.parent('arrowGame')
   generateTaskBox(9);
   initActionsQueue();
   textAlign(CENTER, TOP);
